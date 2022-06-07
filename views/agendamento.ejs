@@ -4,7 +4,7 @@
     </head>
     <style>
       body {
-        background-image: linear-gradient(135deg, #2DC7A3, #1EAFA8);
+        background-color: #7B88EE;
       }
 
       .voltar {
@@ -16,12 +16,16 @@
       .agendar {
         height: 46px;
         border-radius: 8px;
-        background-color: #1EAFA8;
-        border-color: #2DC7A3;
+        background-color: #7B88EE;
+        border-color: #6E6FE5;
       }
 
       .agendar:hover {
-        background-color: #2DC7A3;
+        background-color: #6E6FE5;
+      }
+
+      .card {
+        background-color: #f1f1f1;
       }
     </style>
 
@@ -32,7 +36,7 @@
         <div class="col-8" style="margin:10px auto;">
           <form>
             <div class="card">
-              <div class="card-header" style="text-align: center; background-color: #b2e0cb;">
+              <div class="card-header" style="text-align: center; background-color: #f1f1f1;">
                 <label for="data">
                   <h4>Agende uma data para sua consulta</h4>
                 </label>
@@ -46,7 +50,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card-body" style="text-align: center; background-color: #b2e0cb;">
+              <div class="card-body" style="text-align: center; background-color: #f1f1f1;">
                 <p style="color:#ff0000;">Agendamentos a partir da data abaixo:</p>
                 <div id="divDtFutura"></div>
                 <hr>
@@ -54,7 +58,7 @@
                   <button onclick="agendamento()" class="btn btn-success agendar">Agendar</button>
                 </div>
               </div>
-              <div style="background-color: #b2e0cb;">
+              <div style="background-color: #f1f1f1;">
                 <a class="btn btn-dark btn-sm text-white m-3 voltar" href="/admin">Voltar</a>
               </div>
             </div>
